@@ -1,0 +1,23 @@
+{
+  "name": "angular-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_ENV=development; webpack-dev-server --open --progress --port 9000",
+    "build": "export NODE_ENV=production; webpack -p"
+  },
+  "author": "arche galla",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-cookies": "^1.6.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "html-webpack-plugin": "^2.29.0",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
