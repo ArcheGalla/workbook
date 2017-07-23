@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas udacity</title>
+</head>
+<body>
+
+<canvas id="c" width="500px" height="500px" style="border: 1px solid grey"></canvas>
+<script>
+
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
+
+
+    ctx.strokeRect(50, 50, 100, 100);
+
+    ctx.beginPath();
+    ctx.moveTo(75, 75);
+
+    ctx.lineTo(125, 125);
+    ctx.lineTo(125, 75);
+    ctx.lineTo(75, 75);
+
+    ctx.stroke();
+
+
+    ctx.strokeRect(150, 150, 200, 200);
+</script>
+</body>
+</html>
