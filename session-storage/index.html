@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 30px;
+			background-color: #0277bd;
+		}
+	</style>
+</head>
+<body>
+<br>
+<button id="show">Show storage</button>
+<br>
+<input type="text" id="text">
+<button id="add_token">Add token</button>
+<br>
+<button id="remove">Remove token</button>
+<br>
+<a href="page_one.html" target="_self">second page</a>
+<script>
+	const input = document.getElementById('text');
+	const showBtn = document.getElementById('show');
+	const removeBtn = document.getElementById('remove');
+	const addToken = document.getElementById('add_token');
+
+	showBtn.addEventListener('click', function() {
+		console.log(' token = ', window.sessionStorage.getItem('token'));
+	});
+
+	addToken.addEventListener('click', function() {
+		window.sessionStorage.setItem('token', input.value);
+	});
+
+	removeBtn.addEventListener('click', function() {
+		window.sessionStorage.clear();
+		console.log('Session storage is clean');
+	});
+</script>
+</body>
+</html>
