@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas udacity</title>
+</head>
+<body>
+
+<canvas id="c" width="500px" height="500px" style="border: 1px solid grey"></canvas>
+<script>
+
+    let canvas = document.querySelector("canvas");
+    let ctx = canvas.getContext("2d");
+
+    // paint 100px size rectangle
+    ctx.fillRect(100, 100, 100, 100);
+
+    // paint 50px size empty rectangle
+    ctx.strokeRect(50, 50, 50, 50);
+
+
+    ctx.beginPath();
+
+    ctx.moveTo(10, 10);
+    ctx.lineTo(50, 50);
+    ctx.lineTo(50, 10);
+    ctx.lineTo(10, 10);
+
+    // ctx.fill();
+    ctx.stroke();
+
+</script>
+</body>
+</html>
