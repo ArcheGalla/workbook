@@ -1,0 +1,25 @@
+{
+	"name": "next-sample-app",
+	"version": "1.0.0",
+	"description": "Tutorial for next js framework based application ",
+	"main": "index.js",
+	"scripts": {
+		"test": "test",
+		"dev": "next"
+	},
+	"keywords": [
+		"next",
+		"js",
+		"react",
+		"node",
+		"express",
+		"js"
+	],
+	"author": "arche galla",
+	"license": "ISC",
+	"dependencies": {
+		"next": "^3.0.3",
+		"react": "^15.6.1",
+		"react-dom": "^15.6.1"
+	}
+}
