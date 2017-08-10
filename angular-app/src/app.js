@@ -45,3 +45,49 @@ angular
 angular.element(document).ready(function() {
     angular.bootstrap(document, ['app'])
 });
+
+/*import angular from "angular";
+
+ angular
+ .module('core', [])
+ .provider('Token', function() {
+ function Token() {
+ this.getToken = function() {
+ return window.localStorage.getItem('token');
+ };
+
+ this.setToken = function(token) {
+ window.localStorage.setItem('token', token);
+ };
+
+ this.showToken = function() {
+ console.log('Token = ', this.getToken());
+ };
+ }
+
+ return {
+
+ $get: ['$window', function($window) {
+ console.log('$window', $window);
+
+ return new Token();
+ }]
+ }
+ });
+
+ angular
+ .module('app', ['core'])
+ .service('AppMainService', function(Token) {
+ Token.showToken();
+ })
+ .config(function(TokenProvider) {
+ console.log('Token provider', TokenProvider);
+ })
+ .run(function(AppMainService) {
+ });
+
+
+ angular.element(document).ready(function() {
+ angular.bootstrap(document, ['app'])
+ });
+ */

@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: './src/app.js',
@@ -27,7 +26,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index_6.html'
+            template: './src/index.html'
         })
     ]
 };
