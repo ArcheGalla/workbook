@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -15,19 +14,26 @@
 	</style>
 </head>
 <body>
+<br>
+<button id="show">Show storage</button>
+<br>
 <input type="text" id="text">
 <button id="add_token">Add token</button>
 <br>
 <button id="remove">Remove token</button>
 <br>
-<button id="show">Show storage</button>
+<a href="page_one.html" target="_self">second page</a>
 <br>
-<a href="page_one.html" target="_blank">page one in new tab</a>
+<a href="index.html" target="_self">index</a>
 <script>
 	const input = document.getElementById('text');
 	const showBtn = document.getElementById('show');
 	const removeBtn = document.getElementById('remove');
 	const addToken = document.getElementById('add_token');
+
+	showBtn.addEventListener('click', function() {
+		console.log(' token = ', window.sessionStorage.getItem('token'));
+	});
 
 	addToken.addEventListener('click', function() {
 		window.sessionStorage.setItem('token', input.value);
@@ -36,10 +42,6 @@
 	removeBtn.addEventListener('click', function() {
 		window.sessionStorage.clear();
 		console.log('Session storage is clean');
-	});
-
-	showBtn.addEventListener('click', function() {
-		console.log(' token = ', window.sessionStorage.getItem('token'));
 	});
 </script>
 </body>
