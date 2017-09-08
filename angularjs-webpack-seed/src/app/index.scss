@@ -1,0 +1,50 @@
+@keyframes shimmerAnimationSm {
+	0% {
+		background-position: -468px 0
+	}
+	100% {
+		background-position: 468px 0
+	}
+}
+
+@keyframes shimmerAnimationMd {
+	0% {
+		background-position: -668px 0
+	}
+	100% {
+		background-position: 668px 0
+	}
+}
+
+@keyframes shimmerAnimationLg {
+	0% {
+		background-position: -968px 0
+	}
+	100% {
+		background-position: 968px 0
+	}
+}
+
+.shimmer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 1.5s;
+	background: #646464;
+	background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+}
+
+.shimmer-size-sm {
+	animation-name: shimmerAnimationSm;
+}
+
+.shimmer-size-md {
+	animation-name: shimmerAnimationMd;
+}
+
+.shimmer-size-lg {
+	animation-name: shimmerAnimationLg;
+}

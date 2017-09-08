@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Harmonic</title>
+    <meta name="description" content="">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <% for(var i = 0; i < htmlWebpackPlugin.files.css; i++) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[i] %>" rel="stylesheet">
+    <% } %>
+
+    <% for(var i = 0; i < htmlWebpackPlugin.files.chunks; i++) { %>
+    <script type="module" src="<%= htmlWebpackPlugin.files.chunks[i].entry %>" defer></script>
+    <% } %>
+</head>
+<body>
+<div>
+    <button id="button"> Hello </button>
+    <div id="output"></div>
+</div>
+</body>
+</html>
