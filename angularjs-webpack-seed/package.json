@@ -4,7 +4,7 @@
   "description": "Seed Peoject for VOS modules",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --color --open --port 9000"
+    "start": "webpack-dev-server --progress --color --open --port 9001"
   },
   "keywords": [
     "angularjs",
